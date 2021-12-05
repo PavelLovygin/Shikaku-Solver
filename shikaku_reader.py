@@ -23,7 +23,7 @@ class shikaku_reader:
         matrix = []
         for i in range(n):
             row_str = input().replace('_', '0')
-            row = [int(x) for x in list(row_str)]
+            row = [int(x) for x in row_str.split()]
             matrix.append(row)
 
         return matrix
